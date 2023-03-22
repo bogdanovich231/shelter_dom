@@ -393,6 +393,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0px 40px;
 }
 .header_menu_pets h2 {
   color: #545454;
@@ -402,14 +403,14 @@ a {
   margin-top: 10px;
   letter-spacing: 0.06em;
 }
-.header_menu_pets li {
+.header_menu_pets ul li {
   margin-left: 35px;
 }
-.header_menu_pets li a {
-  color: #545454;
+.header_menu_pets ul li:nth-child(2) {
+  border-bottom: 2px solid #F1CDB3;
 }
-.header_menu_pets li a:nth-child(2) {
-  color: #292929;
+.header_menu_pets ul li a {
+  color: #545454;
 }
 
 .pets_cards_container ul {

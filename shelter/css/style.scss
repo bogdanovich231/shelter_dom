@@ -326,6 +326,30 @@ a{
 
    }
 }
+.header_menu_pets{
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    h2{
+        color: $color-dark-l;
+    }
+    p{
+        font-size: 13px;
+        margin-top: 10px;
+        letter-spacing: 0.06em;
+    }
+    li{
+        margin-left: 35px;
+        a{
+            color: $color-dark-l;
+              &:nth-child(2){
+                color: $color-dark-3xl;
+            }
+        }
+    }
+}
+
 
 .pets_cards_container{
     ul{

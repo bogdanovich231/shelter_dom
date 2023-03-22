@@ -383,6 +383,35 @@ a {
   max-width: 278px;
 }
 
+.header_menu_pets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header_menu_pets h2 {
+  color: #545454;
+}
+.header_menu_pets p {
+  font-size: 13px;
+  margin-top: 10px;
+  letter-spacing: 0.06em;
+}
+.header_menu_pets li {
+  margin-left: 35px;
+}
+.header_menu_pets li a {
+  color: #545454;
+}
+.header_menu_pets li a:nth-child(2) {
+  color: #292929;
+}
+
 .pets_cards_container ul {
   display: -webkit-box;
   display: -ms-flexbox;

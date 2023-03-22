@@ -346,7 +346,7 @@ a{
               &:nth-child(2){
                 border-bottom: 2px solid #F1CDB3;
              }
-            a{
+            a {
             color: $color-dark-l;
             }
                 
@@ -358,6 +358,7 @@ a{
 
 
 .pets_cards_container{
+    padding-bottom: 100px;
     ul{
         display: flex;
         flex-wrap: wrap;
@@ -367,5 +368,30 @@ a{
         margin-bottom: 30px;
         }
     }
-    
+}
+.pets_pagination{
+    text-align: center;
+    a.left {
+            color: $color-dark-s;
+            border: 2px solid #CDCDCD;
+            border-radius: 100px;
+        }
+        a.right{
+            border: 2px solid #F1CDB3;
+            border-radius: 100px;
+            color: $color-dark-3xl;
+        }
+        a.btn{
+            padding: 15px 20px;
+        }
+        a.double{
+            padding: 15px 15px;
+        }
+    a.count{
+        background: #F1CDB3;
+        border-radius: 100px;
+        padding: 15px 22px;
+        font-size: 20px;
+        color: $color-dark-3xl;
+    }
 }

@@ -413,6 +413,9 @@ a {
   color: #545454;
 }
 
+.pets_cards_container {
+  padding-bottom: 100px;
+}
 .pets_cards_container ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -426,4 +429,31 @@ a {
 .pets_cards_container ul .card {
   margin-right: 40px;
   margin-bottom: 30px;
+}
+
+.pets_pagination {
+  text-align: center;
+}
+.pets_pagination a.left {
+  color: #CDCDCD;
+  border: 2px solid #CDCDCD;
+  border-radius: 100px;
+}
+.pets_pagination a.right {
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+  color: #292929;
+}
+.pets_pagination a.btn {
+  padding: 15px 20px;
+}
+.pets_pagination a.double {
+  padding: 15px 15px;
+}
+.pets_pagination a.count {
+  background: #F1CDB3;
+  border-radius: 100px;
+  padding: 15px 22px;
+  font-size: 20px;
+  color: #292929;
 }

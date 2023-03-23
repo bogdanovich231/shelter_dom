@@ -395,8 +395,12 @@ a {
           justify-content: space-between;
   margin: 0px 40px;
 }
+.header_menu_pets a {
+  color: #292929;
+}
 .header_menu_pets h2 {
   color: #545454;
+  margin-bottom: 0px;
 }
 .header_menu_pets p {
   font-size: 13px;

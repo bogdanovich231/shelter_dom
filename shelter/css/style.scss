@@ -333,9 +333,12 @@ a{
         align-items: center;
         justify-content: space-between;
         margin: 0px 40px;
-        
+       a{
+        color: $color-dark-3xl;
+       } 
     h2{
         color: $color-dark-l;
+        margin-bottom: 0px;
     }
     p{
         font-size: 13px;

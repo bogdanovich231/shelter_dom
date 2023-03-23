@@ -1,6 +1,4 @@
-html{
-    scroll-behavior: smooth;
-}
+
 body{
     font-family: georgia, garamond serif;
 
@@ -205,6 +203,7 @@ a{
 }
 .pets_btn a:hover{
     transition: all 700ms ease;
+    color: $color-dark-3xl;
     background: rgba(0,0,0,0);
     box-shadow: inset 0 0 0 3px $color-primary;
     cursor: pointer;

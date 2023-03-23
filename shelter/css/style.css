@@ -37,9 +37,12 @@ a {
 .header {
   background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 }
-.header .header_block {
+
+.header_block {
   margin-left: 40px;
   margin-right: 40px;
+  margin: auto;
+  width: 1200px;
 }
 
 .header_menu {
@@ -81,7 +84,11 @@ a {
 }
 .header_menu li a:nth-child(1) {
   margin-left: 0px;
+}
+
+.header_menu a:hover {
   color: #FAFAFA;
+  border-bottom: 2px solid #F1CDB3;
 }
 
 .header_start {
@@ -111,6 +118,12 @@ a {
   border-radius: 100px;
   padding: 15px 45px;
   color: #292929;
+}
+
+.header_start_title a:hover {
+  -webkit-box-shadow: 7px 7px #9a9a9a, -7px -7px white;
+          box-shadow: 7px 7px #9a9a9a, -7px -7px white;
+  cursor: pointer;
 }
 
 .header_block_img img {
@@ -178,6 +191,8 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 1200px;
+  margin: auto;
 }
 .slider ul {
   display: -webkit-box;
@@ -200,6 +215,12 @@ a {
 .pets_block_slider {
   margin: 0px 40px;
   padding-bottom: 100px;
+}
+
+.pets_btn a:hover {
+  -webkit-box-shadow: 7px 7px white, -7px -7px #c7c7c7;
+          box-shadow: 7px 7px white, -7px -7px #c7c7c7;
+  cursor: pointer;
 }
 
 .slide {
@@ -238,6 +259,10 @@ a {
   margin: 80px 0px 100px;
 }
 
+.help_block {
+  margin: auto;
+  width: 1280px;
+}
 .help_block h2 {
   color: #545454;
   text-align: center;
@@ -344,6 +369,8 @@ a {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding-top: 35px;
+  margin: auto;
+  width: 1200px;
 }
 .footer .footer_block ul {
   padding: 0;
@@ -417,26 +444,63 @@ a {
   color: #545454;
 }
 
+.header_menu_pets a:hover {
+  color: #292929;
+  border-bottom: 2px solid #F1CDB3;
+}
+
 .pets_cards_container {
   padding-bottom: 100px;
 }
 .pets_cards_container ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (460px)[2];
+  grid-template-rows: repeat(2, 460px);
+  width: 1200px;
+  margin: auto;
+}
+.pets_cards_container ul > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.pets_cards_container ul > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+.pets_cards_container ul > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.pets_cards_container ul > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+}
+.pets_cards_container ul > *:nth-child(5) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+.pets_cards_container ul > *:nth-child(6) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
+.pets_cards_container ul > *:nth-child(7) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+}
+.pets_cards_container ul > *:nth-child(8) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
 }
 .pets_cards_container ul .card {
   margin-right: 40px;
-  margin-bottom: 30px;
 }
 
 .pets_pagination {
   text-align: center;
+  margin-top: 45px;
 }
 .pets_pagination a.left {
   color: #CDCDCD;

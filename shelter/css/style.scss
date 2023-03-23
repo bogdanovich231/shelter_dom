@@ -41,14 +41,14 @@ a{
 }
 .header{
     background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
-    .header_block{
-        margin-left: 40px;
-        margin-right: 40px;
-    }
 }
-.header_logo{
+.header_block{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin: auto;
+    width: 1200px;
+}
 
-}
 .header_menu{
         display: flex;
         align-items: center;
@@ -76,20 +76,24 @@ a{
         &:nth-child(1){
             border-bottom: 2px solid #F1CDB3;
          }
+
          a{
             color: $color-dark-s;
             @extend %font;
 
             &:nth-child(1){
                 margin-left: 0px;
-                color: $color-light-s;
             }
+
          }
 
         }
 
     }
-
+    .header_menu a:hover{
+        color: $color-light-s;
+        border-bottom: 2px solid #F1CDB3;
+        }
 .header_start{
     display: flex;
     align-items: center;
@@ -111,8 +115,14 @@ a{
         border-radius: 100px;
         padding: 15px 45px;
         color: $color-dark-3xl;
+
     }
+
     
+}
+.header_start_title a:hover{
+    box-shadow: 7px 7px darken($color-dark-s, 20%), -7px -7px lighten($color-primary, 20%);
+    cursor: pointer;
 }
 .header_block_img {
     img{
@@ -164,6 +174,8 @@ a{
     align-items: center;
     justify-content: center;
     justify-content: space-between;
+    width: 1200px;
+    margin: auto;
     ul{
         display: flex;
         flex-wrap: wrap;
@@ -181,6 +193,11 @@ a{
     margin: 0px 40px;
     padding-bottom: 100px;
 }
+.pets_btn a:hover{
+    box-shadow: 7px 7px lighten($color-primary, 20%), -7px -7px darken($color-light-s, 20%);
+    cursor: pointer;
+}
+
 .slide{
     background:$color-light-s;
     border-radius: 9px;
@@ -209,6 +226,8 @@ a{
     margin: 80px 0px 100px;
 }
 .help_block{
+    margin: auto;
+    width: 1280px;
     h2{
         color: $color-dark-l;
         text-align: center;
@@ -291,6 +310,8 @@ a{
     align-items: center;
     justify-content: space-around;
     padding-top: 35px;
+    margin: auto;
+    width: 1200px;
     
     ul{
         padding: 0;
@@ -360,22 +381,27 @@ a{
     }
     
 }
-
+.header_menu_pets a:hover{
+    color: $color-dark-3xl;
+    border-bottom: 2px solid #F1CDB3;
+}
 
 .pets_cards_container{
     padding-bottom: 100px;
     ul{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 460px);
+        width: 1200px;
+        margin: auto;
         .card{
         margin-right: 40px;
-        margin-bottom: 30px;
         }
     }
 }
 .pets_pagination{
     text-align: center;
+    margin-top: 45px;
     a.left {
             color: $color-dark-s;
             border: 2px solid #CDCDCD;
